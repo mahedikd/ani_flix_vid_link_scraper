@@ -11,6 +11,8 @@ const path = require('path');
 const userAgent =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4422.0 Safari/537.36';
 const browserPath = '/usr/bin/brave';
+const browserArr = browserPath.split('/').filter(Boolean);
+const browserBin = browserArr[browserArr.length - 1];
 const { log } = console;
 const url = argv.u;
 
@@ -95,6 +97,7 @@ async function main(url) {
     downloadLinks.push(downloadLink);
   }
   log(downloadLinks);
+  exec(`pkill ${browserBin}`);
 }
 
 main(url);

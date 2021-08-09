@@ -8,11 +8,20 @@
   },
   "keywords": [],
   "author": "mahedikd",
-  "license": "ISC",
+  "license": "GPL-3.0",
   "dependencies": {
     "chalk": "^4.1.1",
     "minimist": "^1.2.5",
     "node-fetch": "^2.6.1",
     "puppeteer-core": "^10.1.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahedikd/animeflix_scraper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mahedikd/animeflix_scraper/issues"
+  },
+  "homepage": "https://github.com/mahedikd/animeflix_scraper#readme"
 }
